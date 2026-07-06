@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Kotryna Bass — Sell digital products on ETSY with AI</title>
-<meta name="description" content="Kotryna Bass helps solopreneurs create and sell Etsy digital products with AI. Start free: a Claude prompt that finds what's already selling. Plus Etsy AI Academy and Custom GPTs Profit Lab." />
+<title>Kotryna Bass — Make money with AI, every month</title>
+<meta name="description" content="Kotryna Bass helps solopreneurs make money with AI. Etsy AI Academy ($97), the AI Money Movement membership ($29/mo), and a free Claude prompt that finds what's already selling." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     --coral:#FF5A3C;
     --butter:#FFCE45;
     --lilac:#C9BCF5;
+    --mint:#A8E0C9;
     --card:#FFFFFF;
     --line:var(--ink);
     --radius:16px;
@@ -36,9 +37,9 @@
   .avatar{ width:108px; height:108px; border-radius:50%; border:2.5px solid var(--ink); box-shadow:var(--shadow); object-fit:cover; display:block; background:var(--coral); }
   .avatar-fallback{ width:108px; height:108px; border-radius:50%; border:2.5px solid var(--ink); box-shadow:var(--shadow); background:var(--coral); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:38px; }
   .avatar-wrap .flag{ position:absolute; bottom:2px; right:2px; width:32px; height:32px; border-radius:50%; background:#fff; border:2px solid var(--ink); display:flex; align-items:center; justify-content:center; font-size:16px; }
-  .hero h1{ font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:31px; letter-spacing:-0.01em; }
+  .hero h1{ font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:31px; letter-spacing:-0.02em; line-height:1.1; }
   .hero .role{ font-weight:600; font-size:14px; color:var(--ink-soft); }
-  .hero .hook{ font-size:17px; line-height:1.5; font-weight:500; max-width:370px; margin-top:2px; }
+  .hero .hook{ font-size:17px; line-height:1.55; font-weight:500; max-width:340px; margin-top:4px; text-wrap:balance; }
   .hook b{ background:linear-gradient(transparent 55%, var(--butter) 55%); font-weight:700; }
   .chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:2px; }
   .chip{ font-size:12px; font-weight:600; padding:6px 12px; border-radius:999px; border:1.5px solid var(--ink); background:#fff; }
@@ -65,36 +66,70 @@
   .proof-card .who b{ font-weight:700; }
   .proof-card .who span{ color:var(--ink-soft); }
 
-  /* compact 2-up reviews */
-  .reviews{ display:flex; flex-direction:column; gap:12px; }
+  /* chat-screenshot style reviews */
+  .reviews{ display:flex; flex-direction:column; gap:16px; }
   .reviews-head{ text-align:center; font-size:12.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-soft); }
-  .review{ background:var(--card); border:2px solid var(--ink); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px 18px; }
-  .review .stars{ color:var(--coral); letter-spacing:2px; font-size:13px; }
-  .review blockquote{ font-size:14px; line-height:1.5; margin:6px 0 10px; }
-  .review .who{ display:flex; align-items:center; gap:9px; font-size:12.5px; }
-  .review .who .dot{ width:28px; height:28px; border-radius:50%; background:var(--mint,#A8E0C9); border:2px solid var(--ink); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:11px; }
-  .review .who b{ font-weight:700; }
-  .review .who span{ color:var(--ink-soft); }
+  .review{ display:flex; align-items:flex-end; gap:10px; }
+  .review .pfp{ width:38px; height:38px; border-radius:50%; border:2px solid var(--ink); background:var(--mint); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; flex-shrink:0; }
+  .review .bubble{ background:#fff; border:2px solid var(--ink); border-radius:18px 18px 18px 4px; box-shadow:var(--shadow); padding:12px 16px 10px; transform:rotate(-0.6deg); }
+  .review:nth-of-type(odd) .bubble{ transform:rotate(0.7deg); }
+  .review .meta{ display:flex; align-items:center; gap:8px; font-size:12.5px; margin-bottom:4px; }
+  .review .meta b{ font-weight:700; }
+  .review .meta .stars{ color:var(--coral); letter-spacing:1px; font-size:11px; }
+  .review .bubble p{ font-size:14px; line-height:1.5; margin:0 0 4px; color:var(--ink); }
+  .review .bubble .where{ font-size:11.5px; color:var(--ink-soft); }
 
   /* ---------- product cards ---------- */
   .card{ display:block; background:var(--card); border:2px solid var(--line); border-radius:var(--radius); text-decoration:none; color:inherit; box-shadow:var(--shadow); overflow:hidden; transition: transform .12s ease, box-shadow .12s ease; opacity:0; animation: rise .45s ease forwards; }
   .card:hover{ transform:translate(-2px,-2px); box-shadow:var(--shadow-lift); }
   .card:active{ transform:translate(3px,3px); box-shadow:0 0 0 var(--ink); }
   .card:focus-visible{ outline:3px solid var(--coral); outline-offset:3px; }
-  .cover{ position:relative; padding:22px 20px 18px; border-bottom:2px solid var(--ink); min-height:118px; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover{ position:relative; overflow:hidden; padding:18px 20px 20px; border-bottom:2px solid var(--ink); display:flex; flex-direction:column; gap:14px; }
+  .cover__top{ position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between; gap:12px; }
   .cover--coral{ background:var(--coral); color:#fff; }
   .cover--butter{ background:var(--butter); color:var(--ink); }
   .cover--lilac{ background:var(--lilac); color:var(--ink); }
-  .cover__kicker{ font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; opacity:.85; }
-  .cover__art{ font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:25px; line-height:1.1; letter-spacing:-0.01em; max-width:90%; }
-  .tag{ position:absolute; top:16px; right:16px; font-size:12.5px; font-weight:700; padding:6px 12px; border-radius:999px; border:2px solid var(--ink); background:#fff; color:var(--ink); }
+  .cover--mint{ background:var(--mint); color:var(--ink); }
+  .cover__kicker{ font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; opacity:.85; }
+  .cover__art{ position:relative; z-index:2; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:24px; line-height:1.18; letter-spacing:-0.015em; max-width:76%; text-wrap:balance; }
+  .tag{ flex-shrink:0; font-size:12px; font-weight:700; padding:5px 11px; border-radius:999px; border:2px solid var(--ink); background:#fff; color:var(--ink); white-space:nowrap; }
   .tag--free{ background:var(--ink); color:#fff; }
-  .card__body{ padding:16px 20px 20px; }
-  .card__body h2{ font-family:'Space Grotesk', sans-serif; font-size:17px; font-weight:600; line-height:1.3; margin-bottom:6px; }
-  .card__body p{ font-size:14px; line-height:1.55; color:var(--ink-soft); margin-bottom:14px; }
-  .proof-line{ display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:12px; }
+
+  /* cha-ching: decorative order chips, confined to the right rail (never touch the title) */
+  .money{ position:absolute; top:0; right:4px; bottom:0; width:118px; overflow:hidden; pointer-events:none; z-index:1; }
+  .money span{
+    position:absolute; bottom:-16px; right:8px;
+    font-size:11px; font-weight:700;
+    background:#fff; color:var(--ink);
+    border:2px solid var(--ink); border-radius:999px;
+    padding:2px 8px; opacity:0;
+    animation: chaching 7s linear infinite;
+  }
+  .money span:nth-child(2){ right:56px; animation-delay:2.3s; }
+  .money span:nth-child(3){ right:24px; animation-delay:4.6s; }
+  .money span:nth-child(1){ animation-delay:.4s; }
+  @keyframes chaching{
+    0%{ transform:translateY(0); opacity:0; }
+    10%{ opacity:.95; }
+    55%{ opacity:.9; }
+    78%{ transform:translateY(-72px); opacity:0; }
+    100%{ transform:translateY(-72px); opacity:0; }
+  }
+
+  /* ladder connector between Step 1 and Step 2 */
+  .ladder{ display:flex; justify-content:center; margin:0; }
+  .ladder span{
+    font-size:12px; font-weight:700; letter-spacing:.03em;
+    color:var(--ink-soft); background:var(--paper);
+    border:2px dashed var(--ink); border-radius:999px;
+    padding:6px 14px;
+  }
+  .card__body{ padding:18px 20px 22px; }
+  .card__body h2{ font-family:'Space Grotesk', sans-serif; font-size:18px; font-weight:600; line-height:1.3; letter-spacing:-0.01em; margin-bottom:8px; text-wrap:balance; }
+  .card__body p{ font-size:14px; line-height:1.6; color:var(--ink-soft); margin-bottom:16px; }
+  .proof-line{ display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:14px; }
   .proof-line .stars{ color:var(--coral); letter-spacing:1px; }
-  .bullets{ list-style:none; display:flex; flex-direction:column; gap:7px; margin:0 0 16px; }
+  .bullets{ list-style:none; display:flex; flex-direction:column; gap:8px; margin:0 0 18px; }
   .bullets li{ display:flex; align-items:flex-start; gap:8px; font-size:13.5px; line-height:1.4; color:var(--ink); }
   .bullets li::before{ content:'✓'; color:var(--coral); font-weight:700; flex-shrink:0; }
   .btn{ display:flex; align-items:center; justify-content:center; gap:8px; width:100%; font-weight:700; font-size:15px; padding:13px 18px; border-radius:12px; border:2px solid var(--ink); text-decoration:none; transition: gap .15s ease; }
@@ -103,6 +138,7 @@
   .btn--paper{ background:#fff; color:var(--ink); }
   .card:hover .btn{ gap:12px; }
   .arrow{ transition:transform .15s ease; }
+  .btn-note{ display:block; text-align:center; font-size:11.5px; font-weight:500; color:var(--ink-soft); margin-top:9px; }
   .card:hover .arrow{ transform:translateX(3px); }
 
   /* ---------- contact ---------- */
@@ -141,21 +177,20 @@
       <h1>Kotryna Bass</h1>
       <p class="role">Online educator · digital product creator</p>
       <p class="hook">
-        Steal my AI system for creating <b>Etsy digital products</b> that
-        sell — no audience, no design skills, no overwhelm.
+        Steal my AI playbook for turning ideas into <b>digital products that sell</b>.
       </p>
       <div class="chips">
-        <span class="chip">10+ yrs on Etsy</span>
+        <span class="chip">12+ yrs selling online</span>
         <span class="chip">2,000+ students</span>
         <span class="chip">Beginner-friendly</span>
       </div>
 
-      <!-- PRIMARY CTA: free entry point. Clear about what it is and what it does. -->
+      <!-- PRIMARY CTA: straight to the flagship. Warm audience = sell directly. -->
       <div class="hero-cta">
-        <a href="https://kotrynabass.myflodesk.com/ckq388ja64" target="_blank" rel="noopener">
-          🎁 Get my free Etsy product-idea prompt <span class="arrow">→</span>
+        <a href="https://etsyai.kotrynabass.com" target="_blank" rel="noopener" style="background:var(--coral)">
+          Join Etsy AI Academy — $97 <span class="arrow">→</span>
         </a>
-        <span class="micro"><b>Free Claude prompt.</b> Finds what's already selling on Etsy · 2 min, no spam</span>
+        <span class="micro"><b>Instant access.</b> ★ 4.9 · 2,000+ students</span>
       </div>
     </header>
 
@@ -172,8 +207,11 @@
     <!-- ===== 1. FLAGSHIP ===== -->
     <a class="card" style="--i:2" href="https://etsyai.kotrynabass.com" target="_blank" rel="noopener">
       <div class="cover cover--coral">
-        <span class="tag">Most popular</span>
-        <span class="cover__kicker">Etsy AI Academy</span>
+        <div class="money" aria-hidden="true"><span>🛒 +$14.99</span><span>💸 +$8.50</span><span>🎉 new order</span></div>
+        <div class="cover__top">
+          <span class="cover__kicker">Step 1 · Etsy AI Academy</span>
+          <span class="tag">$97</span>
+        </div>
         <span class="cover__art">From empty shop → first Etsy sale</span>
       </div>
       <div class="card__body">
@@ -184,73 +222,75 @@
           <li>Create them with AI — no design skills needed</li>
           <li>Launch listings that actually get clicks &amp; sales</li>
         </ul>
-        <span class="btn btn--coral">Get instant access <span class="arrow">→</span></span>
+        <span class="btn btn--coral">Get instant access — $97 <span class="arrow">→</span></span>
+        <span class="btn-note">One-time payment · instant access</span>
       </div>
     </a>
 
-    <!-- ===== MORE PROOF (real reviews, placed right around the buy decision) ===== -->
-    <section class="reviews" style="--i:3">
+    <div class="ladder" aria-hidden="true"><span>keep it going — or start here ↓</span></div>
+
+    <!-- ===== STEP 2: AI MONEY MOVEMENT — the natural upgrade ===== -->
+    <!-- TODO: replace href="#" with the live AI Money Movement URL -->
+    <a class="card" style="--i:3" href="#" target="_blank" rel="noopener">
+      <div class="cover cover--lilac">
+        <div class="money" aria-hidden="true"><span>💸 +$29</span><span>🛒 new order</span><span>💸 +$29</span></div>
+        <div class="cover__top">
+          <span class="cover__kicker">Step 2 · AI Money Movement</span>
+          <span class="tag">$29/mo</span>
+        </div>
+        <span class="cover__art">Make money with AI — every single month</span>
+      </div>
+      <div class="card__body">
+        <h2>The monthly membership for AI income</h2>
+        <p>Fresh AI money-making strategies, prompts, and live support every month. Perfect after the Academy — or as your very first step into digital products.</p>
+        <span class="btn btn--ink">Join the Movement — $29/mo <span class="arrow">→</span></span>
+        <span class="btn-note">Cancel anytime · no contracts, no lock-in</span>
+      </div>
+    </a>
+
+    <!-- ===== MORE PROOF (real reviews, chat style) ===== -->
+    <section class="reviews" style="--i:4">
       <p class="reviews-head">What students say</p>
       <div class="review">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>“I was spending 4 hours a day on listings. Now AI does 80% of the work — and my conversion rate went up.”</blockquote>
-        <div class="who"><span class="dot" aria-hidden="true">MR</span><div><b>Marcus R.</b> · <span>Digital prints, Austin TX</span></div></div>
+        <span class="pfp" aria-hidden="true">MR</span>
+        <div class="bubble">
+          <div class="meta"><b>Marcus R.</b> <span class="stars">★★★★★</span></div>
+          <p>"I was spending 4 hours a day on listings. Now AI does 80% of the work — and my conversion rate went up."</p>
+          <span class="where">Digital prints · Austin TX</span>
+        </div>
       </div>
       <div class="review">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>“The AI mockups changed how my listings look. My thumbnails finally feel professional, and people actually click.”</blockquote>
-        <div class="who"><span class="dot" aria-hidden="true">IE</span><div><b>Ieva</b> · <span>Sticker shop, London UK</span></div></div>
+        <span class="pfp" style="background:var(--butter)" aria-hidden="true">IE</span>
+        <div class="bubble">
+          <div class="meta"><b>Ieva</b> <span class="stars">★★★★★</span></div>
+          <p>"The AI mockups changed how my listings look. My thumbnails finally feel professional, and people actually click."</p>
+          <span class="where">Sticker shop · London UK</span>
+        </div>
       </div>
     </section>
 
-    <!-- ===== 2. FREE LEAD MAGNET (second touchpoint) ===== -->
-    <a class="card" style="--i:4" href="https://kotrynabass.myflodesk.com/ckq388ja64" target="_blank" rel="noopener">
-      <div class="cover cover--butter">
-        <span class="tag tag--free">FREE</span>
-        <span class="cover__kicker">Free Claude prompt</span>
-        <span class="cover__art">Find what's already selling on Etsy</span>
-      </div>
-      <div class="card__body">
-        <h2>Free Claude prompt: what to sell on Etsy</h2>
-        <p>Paste it into Claude and get a shortlist of digital products people are already buying — in about 2 minutes.</p>
-        <span class="btn btn--ink">Send me the prompt <span class="arrow">→</span></span>
-      </div>
-    </a>
-
-    <!-- ===== 3. SECONDARY OFFER ===== -->
-    <!-- TODO: replace href="#" with the live Custom GPTs Profit Lab URL -->
-    <a class="card" style="--i:5" href="https://kotrynabass.com/gpt" target="_blank" rel="noopener">
-      <div class="cover cover--lilac">
-        <span class="cover__kicker">Custom GPTs Profit Lab</span>
-        <span class="cover__art">Turn ChatGPT into something people pay for</span>
-      </div>
-      <div class="card__body">
-        <h2>Build a GPT that earns</h2>
-        <p>Go from "I use ChatGPT" to "I sell my own custom GPT." Learn to build, package, and price it.</p>
-        <span class="btn btn--paper">Explore the Lab <span class="arrow">→</span></span>
-      </div>
-    </a>
-
-    <!-- ===== 4. ABOUT ===== -->
-    <a class="card" style="--i:6" href="https://kotrynabass.com" target="_blank" rel="noopener">
+    <!-- ===== FREE (quiet catch-all for the not-ready) ===== -->
+    <a class="card" style="--i:5" href="https://kotrynabass.myflodesk.com/ckq388ja64" target="_blank" rel="noopener">
       <div class="card__body" style="padding-top:20px">
-        <h2>How I built this online ↗</h2>
-        <p>The story behind the products — what I learned, what I'd skip, and what I'm building next.</p>
-        <span class="btn btn--paper">Learn more about me <span class="arrow">→</span></span>
+        <h2>Not ready yet? Grab the free prompt 🎁</h2>
+        <p>A free Claude prompt that shows you what's already selling on Etsy — takes 2 minutes.</p>
+        <span class="btn btn--paper">Send me the free prompt <span class="arrow">→</span></span>
+        <span class="btn-note">Takes 2 minutes · no spam, unsubscribe anytime</span>
       </div>
     </a>
 
     <!-- ===== 5. CONTACT ===== -->
-    <section class="contact" style="--i:7">
+    <section class="contact" style="--i:6">
       <h2>Got a question?</h2>
       <p>I read and reply to every email myself.</p>
       <div class="contact-row">
         <a class="btn btn--paper" href="mailto:hello@kotrynabass.com">Email me</a>
         <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy email address">Copy</button>
       </div>
+      <span class="btn-note">hello@kotrynabass.com</span>
     </section>
 
-    <footer style="--i:8">© 2026 Kotryna Bass · <a href="https://kotrynabass.com" target="_blank">kotrynabass.com</a></footer>
+    <footer style="--i:7">© 2026 Kotryna Bass · kotrynabass.com</footer>
   </main>
 
   <div class="sticky" id="sticky">
