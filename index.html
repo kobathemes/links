@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Kotryna Bass — Make money with AI, every month</title>
-<meta name="description" content="Kotryna Bass helps solopreneurs make money with AI. Etsy AI Academy ($97), the AI Money Movement membership ($29/mo), and a free Claude prompt that finds what's already selling." />
+<title>Kotryna Bass — AI Income Sprint &amp; Digital Product Programs</title>
+<meta name="description" content="Build and start selling digital products with Claude. Join Passive Income Magic 4.0: AI Income Sprint (€197), explore Etsy AI Academy (€97), or join the AI Money Movement ($19/month)." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -78,6 +78,141 @@
   .review .meta .stars{ color:var(--coral); letter-spacing:1px; font-size:11px; }
   .review .bubble p{ font-size:14px; line-height:1.5; margin:0 0 4px; color:var(--ink); }
   .review .bubble .where{ font-size:11.5px; color:var(--ink-soft); }
+
+  /* ---------- featured flagship offer ---------- */
+  .card.card--featured{
+    position:relative;
+    border:2px solid var(--ink);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    background:var(--card);
+  }
+  .card.card--featured:hover{
+    transform:translate(-2px,-2px);
+    box-shadow:var(--shadow-lift);
+  }
+  .featured-ribbon{
+    position:relative;
+    z-index:3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    background:var(--butter);
+    color:var(--ink);
+    border-bottom:2px solid var(--ink);
+    padding:9px 16px;
+    font-size:10.5px;
+    font-weight:800;
+    letter-spacing:.07em;
+    text-transform:uppercase;
+  }
+  .cover--sprint{
+    min-height:0;
+    padding:20px;
+    background:var(--ink);
+    color:#fff;
+    border-radius:0;
+    isolation:isolate;
+  }
+  .cover--sprint::before{
+    content:'';
+    position:absolute;
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    top:-31px;
+    right:-24px;
+    background:var(--lilac);
+    border:2px solid var(--ink);
+    z-index:-1;
+  }
+  .cover--sprint::after{
+    content:'';
+    position:absolute;
+    width:92px;
+    height:20px;
+    right:-18px;
+    bottom:18px;
+    background:var(--coral);
+    transform:rotate(-8deg);
+    z-index:-1;
+  }
+  .cover--sprint .cover__kicker{
+    color:var(--butter);
+    opacity:1;
+  }
+  .cover--sprint .tag{
+    background:#fff;
+    color:var(--ink);
+    border-color:#fff;
+  }
+  .sprint-brand{
+    position:relative;
+    z-index:2;
+    display:block;
+    margin-bottom:-5px;
+    color:var(--lilac);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .sprint-title{
+    position:relative;
+    z-index:2;
+    display:block;
+    max-width:100%;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:31px;
+    line-height:1;
+    letter-spacing:-.04em;
+    font-weight:700;
+    text-transform:uppercase;
+  }
+  .sprint-subtitle{
+    position:relative;
+    z-index:2;
+    display:block;
+    max-width:88%;
+    color:rgba(255,255,255,.82);
+    font-size:13.5px;
+    line-height:1.45;
+    font-weight:600;
+  }
+  .featured-intro{
+    display:inline-block;
+    margin-bottom:8px;
+    color:var(--coral);
+    font-size:10.5px;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .card.card--featured .card__body{ padding:19px 20px 21px; }
+  .card.card--featured .card__body h2{ font-size:19px; }
+  .card.card--featured .card__body p{ margin-bottom:14px; }
+  .card.card--featured .bullets{ margin-bottom:16px; }
+  .card.card--featured .bullets li{ font-size:13.5px; }
+  .card.card--featured .bullets li::before{
+    color:var(--coral);
+    background:transparent;
+    border:0;
+    width:auto;
+    height:auto;
+    border-radius:0;
+    display:block;
+    font-size:inherit;
+    margin-top:0;
+  }
+  .btn--sprint{
+    background:var(--coral);
+    color:#fff;
+    padding:13px 18px;
+    font-size:15px;
+    box-shadow:none;
+  }
+  .btn--sprint:hover{ box-shadow:none; }
 
   /* ---------- product cards ---------- */
   .card{ display:block; background:var(--card); border:2px solid var(--line); border-radius:var(--radius); text-decoration:none; color:inherit; box-shadow:var(--shadow); overflow:hidden; transition: transform .12s ease, box-shadow .12s ease; opacity:0; animation: rise .45s ease forwards; }
@@ -185,10 +320,43 @@
         <span class="chip">Selling online since 2012</span>
       </div>
 
+      <div class="hero-cta">
+        <a href="https://pim.kotrynabass.com" target="_blank" rel="noopener">Join AI Income Sprint <span aria-hidden="true">→</span></a>
+        <span class="micro"><b>Passive Income Magic 4.0</b> · 21-day program · €197</span>
+      </div>
+
     </header>
 
+    <!-- ===== NEW FLAGSHIP: PASSIVE INCOME MAGIC 4.0 ===== -->
+    <a class="card card--featured" style="--i:1" href="https://pim.kotrynabass.com" target="_blank" rel="noopener">
+      <span class="featured-ribbon">🔥 New flagship program</span>
+      <div class="cover cover--sprint">
+        <div class="cover__top">
+          <span class="cover__kicker">Build it. Launch it. Sell it.</span>
+          <span class="tag">€197</span>
+        </div>
+        <span class="sprint-brand">Passive Income Magic 4.0</span>
+        <span class="sprint-title">AI Income Sprint</span>
+        <span class="sprint-subtitle">21 focused days from idea to a digital product ready to sell.</span>
+      </div>
+      <div class="card__body">
+        <span class="featured-intro">The complete start-to-sale system</span>
+        <h2>Build your digital product with Claude. Launch it in 21 days.</h2>
+        <p>Passive Income Magic is rebuilt for the AI era: one clear action each day to choose your idea, create the product, package the offer and put it up for sale.</p>
+        <ul class="bullets">
+          <li>Validate an idea people are ready to buy</li>
+          <li>Create the product, sales page and launch content with Claude</li>
+          <li>Follow a focused daily plan all the way to launch</li>
+        </ul>
+        <span class="btn btn--sprint">Start the AI Income Sprint — €197 <span class="arrow">→</span></span>
+        <span class="btn-note">One-time payment · full 21-day program</span>
+      </div>
+    </a>
+
+    <div class="ladder" aria-hidden="true"><span>need a smaller first step? ↓</span></div>
+
     <!-- ===== STEP 1: FIRST DIGITAL PRODUCT WITH CLAUDE (€17 entry point) ===== -->
-    <a class="card" style="--i:1" href="https://prompts.kotrynabass.com" target="_blank" rel="noopener">
+    <a class="card" style="--i:2" href="https://prompts.kotrynabass.com" target="_blank" rel="noopener">
       <div class="cover cover--butter">
         <div class="money" aria-hidden="true"><span>⚡ 40 min</span><span>🛒 new order</span><span>💸 +€9.99</span></div>
         <div class="cover__top">
@@ -208,12 +376,12 @@
     <div class="ladder" aria-hidden="true"><span>when you want the full shop ↓</span></div>
 
     <!-- ===== 1. FLAGSHIP ===== -->
-    <a class="card" style="--i:2" href="https://etsyai.kotrynabass.com" target="_blank" rel="noopener">
+    <a class="card" style="--i:3" href="https://etsyai.kotrynabass.com" target="_blank" rel="noopener">
       <div class="cover cover--coral">
-        <div class="money" aria-hidden="true"><span>🛒 +$14.99</span><span>💸 +$8.50</span><span>🎉 new order</span></div>
+        <div class="money" aria-hidden="true"><span>🛒 +€14.99</span><span>💸 +€8.50</span><span>🎉 new order</span></div>
         <div class="cover__top">
           <span class="cover__kicker">Step 2 · Flagship program</span>
-          <span class="tag">$97</span>
+          <span class="tag">€97</span>
         </div>
         <span class="cover__art">Etsy AI Academy</span>
       </div>
@@ -226,7 +394,7 @@
           <li>Nail the niches, keywords &amp; mockups that get you found and clicked</li>
           <li>Go from a single product to a catalog that sells on repeat</li>
         </ul>
-        <span class="btn btn--coral">Get instant access — $97 <span class="arrow">→</span></span>
+        <span class="btn btn--coral">Get instant access — €97 <span class="arrow">→</span></span>
         <span class="btn-note">One-time payment · instant access</span>
       </div>
     </a>
@@ -235,25 +403,25 @@
 
     <!-- ===== STEP 2: AI MONEY MOVEMENT — the natural upgrade ===== -->
     <!-- TODO: replace href="#" with the live AI Money Movement URL -->
-    <a class="card" style="--i:3" href="#" target="_blank" rel="noopener">
+    <a class="card" style="--i:4" href="#" target="_blank" rel="noopener">
       <div class="cover cover--lilac">
-        <div class="money" aria-hidden="true"><span>💸 +$29</span><span>🛒 new order</span><span>💸 +$29</span></div>
+        <div class="money" aria-hidden="true"><span>💸 +$19</span><span>🛒 new order</span><span>💸 +$19</span></div>
         <div class="cover__top">
           <span class="cover__kicker">Step 3 · AI Money Movement</span>
-          <span class="tag">$29/mo</span>
+          <span class="tag">$19/mo</span>
         </div>
         <span class="cover__art">Make money with AI — every single month</span>
       </div>
       <div class="card__body">
         <h2>The monthly membership for AI income</h2>
         <p>Fresh AI money-making strategies, prompts, and live support every month. Perfect after the Academy — or as your very first step into digital products.</p>
-        <span class="btn btn--ink">Join the Movement — $29/mo <span class="arrow">→</span></span>
+        <span class="btn btn--ink">Join the Movement — $19/mo <span class="arrow">→</span></span>
         <span class="btn-note">Cancel anytime · no contracts, no lock-in</span>
       </div>
     </a>
 
     <!-- ===== PROOF (real reviews: first sales & mindset shifts) ===== -->
-    <section class="reviews" style="--i:4">
+    <section class="reviews" style="--i:5">
       <p class="reviews-head">First sales &amp; lightbulb moments</p>
       <div class="review">
         <span class="pfp" style="background:var(--lilac)" aria-hidden="true">MS</span>
@@ -275,7 +443,7 @@
         <span class="pfp" style="background:var(--mint)" aria-hidden="true">SK</span>
         <div class="bubble">
           <div class="meta"><b>Sarah K.</b> <span class="stars">★★★★★</span></div>
-          <p>"After months of procrastinating, Kotryna helped me finally launch. I made my first $1,000 on Etsy — and now I know what to create next."</p>
+          <p>"After months of procrastinating, Kotryna helped me finally launch. I made my first €1,000 on Etsy — and now I know what to create next."</p>
           <span class="where">Etsy AI Academy</span>
         </div>
       </div>
@@ -298,7 +466,7 @@
     </section>
 
     <!-- ===== FREE (quiet catch-all for the not-ready) ===== -->
-    <a class="card" style="--i:5" href="https://kotrynabass.myflodesk.com/aiguide" target="_blank" rel="noopener">
+    <a class="card" style="--i:6" href="https://kotrynabass.myflodesk.com/aiguide" target="_blank" rel="noopener">
       <div class="card__body" style="padding-top:20px">
         <h2>Not ready yet? Grab the free guide 🎁</h2>
         <p>100+ AI digital product ideas you can create and sell — free, so you never wonder what to make.</p>
@@ -308,7 +476,7 @@
     </a>
 
     <!-- ===== 5. CONTACT ===== -->
-    <section class="contact" style="--i:6">
+    <section class="contact" style="--i:7">
       <h2>Got a question?</h2>
       <p>I read and reply to every email myself.</p>
       <div class="contact-row">
@@ -318,11 +486,11 @@
       <span class="btn-note">hello@kotrynabass.com</span>
     </section>
 
-    <footer style="--i:7">© 2026 Kotryna Bass · kotrynabass.com</footer>
+    <footer style="--i:8">© 2026 Kotryna Bass · kotrynabass.com</footer>
   </main>
 
   <div class="sticky" id="sticky">
-    <a href="https://prompts.kotrynabass.com" target="_blank" rel="noopener">⚡ Your first product in 40 min — €17 →</a>
+    <a href="https://pim.kotrynabass.com" target="_blank" rel="noopener">🔥 Join AI Income Sprint — €197 →</a>
   </div>
 
   <script>
