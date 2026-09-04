@@ -1,97 +1,2795 @@
-<!-- ===== FREE LIVE MASTERCLASS ===== -->
-<a class="masterclass-card"
-   style="--i:1"
-   href="https://kotrynabass.myflodesk.com/e8h6khtwj8"
-   target="_blank"
-   rel="noopener">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <div class="masterclass-ribbon">
-    Free live masterclass · Monday, September 7
-  </div>
+  <title>Kotryna Bass — Digital Products, AI & Passive Income</title>
 
-  <div class="masterclass-top">
-    <div class="masterclass-layout">
+  <meta
+    name="description"
+    content="Learn how to create and sell digital products with AI. Join Kotryna Bass's free live masterclass, explore Passive Income Magic 4.0, or start with a free guide."
+  />
 
-      <div class="masterclass-copy">
-        <span class="masterclass-kicker">
-          Your easiest place to start
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --paper: #FBF7EE;
+      --ink: #171210;
+      --ink-soft: #5C534B;
+      --coral: #FF5A3C;
+      --butter: #FFCE45;
+      --lilac: #C9BCF5;
+      --mint: #A8E0C9;
+      --card: #FFFFFF;
+
+      --radius: 16px;
+      --shadow: 5px 5px 0 var(--ink);
+      --shadow-lift: 7px 7px 0 var(--ink);
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+
+      display: flex;
+      justify-content: center;
+
+      padding: 16px 12px 110px;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    .page {
+      width: 100%;
+      max-width: 460px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+
+    a {
+      color: inherit;
+    }
+
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      gap: 8px;
+      padding: 0 2px 4px;
+    }
+
+
+    .avatar-wrap {
+      position: relative;
+
+      width: 82px;
+      height: 82px;
+    }
+
+
+    .avatar {
+      width: 82px;
+      height: 82px;
+
+      border-radius: 50%;
+      border: 2.5px solid var(--ink);
+
+      box-shadow: var(--shadow);
+
+      object-fit: cover;
+      display: block;
+
+      background: var(--coral);
+    }
+
+
+    .avatar-fallback {
+      width: 82px;
+      height: 82px;
+
+      border-radius: 50%;
+      border: 2.5px solid var(--ink);
+
+      box-shadow: var(--shadow);
+
+      background: var(--coral);
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 29px;
+    }
+
+
+    .flag {
+      position: absolute;
+
+      right: 1px;
+      bottom: 1px;
+
+      width: 27px;
+      height: 27px;
+
+      border-radius: 50%;
+
+      background: white;
+      border: 2px solid var(--ink);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 13px;
+    }
+
+
+    .eyebrow {
+      margin-top: 4px;
+
+      font-size: 10.5px;
+      font-weight: 800;
+
+      letter-spacing: .08em;
+      text-transform: uppercase;
+
+      color: var(--coral);
+    }
+
+
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 30px;
+      line-height: 1.03;
+
+      letter-spacing: -.035em;
+
+      max-width: 400px;
+    }
+
+
+    .hero .role {
+      font-size: 14px;
+      line-height: 1.45;
+
+      font-weight: 600;
+
+      color: var(--ink-soft);
+
+      max-width: 390px;
+    }
+
+
+    .hero .hook {
+      margin-top: 2px;
+
+      max-width: 390px;
+
+      font-size: 15.5px;
+      line-height: 1.5;
+
+      font-weight: 500;
+    }
+
+
+    .hook b {
+      background:
+        linear-gradient(
+          transparent 55%,
+          var(--butter) 55%
+        );
+
+      font-weight: 700;
+    }
+
+
+    .hero-cta {
+      width: 100%;
+      margin-top: 7px;
+    }
+
+
+    .hero-cta-primary {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      min-height: 54px;
+
+      padding: 14px 15px;
+
+      background: var(--ink);
+      color: white;
+
+      border: 2px solid var(--ink);
+      border-radius: 14px;
+
+      box-shadow: var(--shadow);
+
+      text-decoration: none;
+
+      font-size: 15px;
+      line-height: 1.2;
+
+      font-weight: 800;
+
+      transition: .15s ease;
+    }
+
+
+    .hero-cta-primary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-lift);
+    }
+
+
+    .micro {
+      display: block;
+
+      margin-top: 8px;
+
+      font-size: 11.5px;
+      line-height: 1.35;
+
+      font-weight: 500;
+
+      color: var(--ink-soft);
+    }
+
+
+    .micro b {
+      color: var(--coral);
+    }
+
+
+    .hero-secondary {
+      display: inline-block;
+
+      margin-top: 10px;
+
+      font-size: 12.5px;
+      font-weight: 700;
+
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+
+    .hero-secondary:hover {
+      color: var(--coral);
+    }
+
+
+    .hero-proof {
+      width: 100%;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 5px 12px;
+
+      margin-top: 4px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      color: var(--ink-soft);
+    }
+
+
+    .hero-proof span {
+      position: relative;
+    }
+
+
+    .hero-proof span:not(:last-child)::after {
+      content: '·';
+
+      position: absolute;
+
+      right: -8px;
+    }
+
+
+
+
+    /* =========================
+       MASTERCLASS
+    ========================== */
+
+
+    .masterclass-card {
+      display: block;
+
+      position: relative;
+
+      background: white;
+
+      border: 2px solid var(--ink);
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      overflow: hidden;
+
+      text-decoration: none;
+      color: inherit;
+
+      transition: .15s ease;
+    }
+
+
+    .masterclass-card:hover {
+      transform: translate(-2px, -2px);
+
+      box-shadow: var(--shadow-lift);
+    }
+
+
+    .masterclass-ribbon {
+      background: var(--coral);
+
+      color: white;
+
+      border-bottom: 2px solid var(--ink);
+
+      padding: 9px 14px;
+
+      text-align: center;
+
+      font-size: 10.5px;
+      font-weight: 800;
+
+      letter-spacing: .07em;
+
+      text-transform: uppercase;
+    }
+
+
+    .masterclass-top {
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          180deg,
+          #FFD86D 0%,
+          var(--butter) 100%
+        );
+
+      border-bottom: 2px solid var(--ink);
+
+      padding: 20px;
+    }
+
+
+    .masterclass-top::before {
+      content: '';
+
+      position: absolute;
+
+      width: 120px;
+      height: 120px;
+
+      border-radius: 50%;
+
+      right: -34px;
+      top: -30px;
+
+      background: rgba(255,255,255,.45);
+
+      border: 2px solid var(--ink);
+    }
+
+
+    .masterclass-top::after {
+      content: '';
+
+      position: absolute;
+
+      width: 86px;
+      height: 16px;
+
+      left: -8px;
+      bottom: 16px;
+
+      background: var(--coral);
+
+      border: 2px solid var(--ink);
+
+      transform: rotate(-8deg);
+    }
+
+
+    .masterclass-layout {
+      position: relative;
+
+      z-index: 2;
+
+      display: grid;
+
+      gap: 16px;
+
+      align-items: center;
+    }
+
+
+    .masterclass-kicker {
+      display: block;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: .08em;
+      text-transform: uppercase;
+
+      margin-bottom: 8px;
+    }
+
+
+    .masterclass-title {
+      display: block;
+
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 27px;
+      line-height: 1.05;
+
+      letter-spacing: -.035em;
+
+      font-weight: 700;
+
+      max-width: 360px;
+    }
+
+
+    .masterclass-mini-proof {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 12px;
+    }
+
+
+    .masterclass-mini-proof span {
+      font-size: 11.5px;
+      font-weight: 700;
+
+      background: white;
+
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+
+      padding: 5px 9px;
+
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+
+
+
+    /* MASTERCLASS VISUAL */
+
+
+    .masterclass-visual {
+      position: relative;
+
+      min-height: 190px;
+    }
+
+
+    .masterclass-screen {
+      position: relative;
+
+      min-height: 170px;
+
+      overflow: hidden;
+
+      background: var(--ink);
+      color: white;
+
+      border: 2px solid var(--ink);
+      border-radius: 18px;
+
+      box-shadow: var(--shadow);
+
+      padding: 16px;
+    }
+
+
+    .masterclass-screen::before {
+      content: '';
+
+      position: absolute;
+
+      right: -14px;
+      bottom: -18px;
+
+      width: 82px;
+      height: 82px;
+
+      border-radius: 50%;
+
+      background: var(--lilac);
+
+      border: 2px solid var(--ink);
+    }
+
+
+    .mc-label {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 6px;
+
+      font-size: 10.5px;
+      font-weight: 800;
+
+      letter-spacing: .07em;
+
+      text-transform: uppercase;
+
+      color: var(--butter);
+    }
+
+
+    .mc-dot {
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+
+      background: var(--coral);
+
+      border: 1.5px solid white;
+    }
+
+
+    .mc-window {
+      position: relative;
+
+      margin-top: 12px;
+
+      background: white;
+      color: var(--ink);
+
+      border: 2px solid var(--ink);
+      border-radius: 14px;
+
+      padding: 14px;
+    }
+
+
+    .mc-window-head {
+      display: flex;
+
+      gap: 5px;
+
+      margin-bottom: 12px;
+    }
+
+
+    .mc-window-head span {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      border: 1.5px solid var(--ink);
+
+      background: var(--paper);
+    }
+
+
+    .mc-window-title {
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 17px;
+      line-height: 1.05;
+
+      font-weight: 700;
+
+      max-width: 180px;
+    }
+
+
+    .mc-window-sub {
+      margin-top: 8px;
+
+      font-size: 11.5px;
+      line-height: 1.35;
+
+      color: var(--ink-soft);
+
+      font-weight: 600;
+
+      max-width: 190px;
+    }
+
+
+    .mc-play {
+      position: absolute;
+
+      right: 14px;
+      bottom: 16px;
+
+      width: 44px;
+      height: 44px;
+
+      border-radius: 50%;
+
+      border: 2px solid var(--ink);
+
+      background: var(--coral);
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 17px;
+
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+
+
+    .mc-float {
+      position: absolute;
+
+      background: white;
+      color: var(--ink);
+
+      border: 2px solid var(--ink);
+      border-radius: 14px;
+
+      box-shadow: var(--shadow);
+
+      padding: 9px 11px;
+    }
+
+
+    .mc-float--date {
+      top: -4px;
+      right: -2px;
+
+      text-align: center;
+
+      transform: rotate(6deg);
+    }
+
+
+    .mc-float--date strong {
+      display: block;
+
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 17px;
+      line-height: 1;
+    }
+
+
+    .mc-float--date span {
+      display: block;
+
+      font-size: 10.5px;
+      font-weight: 800;
+
+      letter-spacing: .06em;
+
+      margin-top: 4px;
+    }
+
+
+    .mc-float--free {
+      left: -2px;
+      bottom: -8px;
+
+      transform: rotate(-5deg);
+
+      font-size: 12px;
+      font-weight: 800;
+
+      background: var(--mint);
+    }
+
+
+    .masterclass-body {
+      padding: 18px 20px 20px;
+    }
+
+
+    .masterclass-body p {
+      font-size: 14px;
+      line-height: 1.55;
+
+      color: var(--ink-soft);
+
+      margin-bottom: 15px;
+    }
+
+
+
+
+    /* =========================
+       CARDS
+    ========================== */
+
+
+    .card {
+      display: block;
+
+      background: white;
+
+      border: 2px solid var(--ink);
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      overflow: hidden;
+
+      text-decoration: none;
+      color: inherit;
+
+      transition: .15s ease;
+    }
+
+
+    .card:hover {
+      transform: translate(-2px, -2px);
+
+      box-shadow: var(--shadow-lift);
+    }
+
+
+    .cover {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 18px 20px 20px;
+
+      border-bottom: 2px solid var(--ink);
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 14px;
+    }
+
+
+    .cover--dark {
+      background: var(--ink);
+      color: white;
+    }
+
+
+    .cover--coral {
+      background: var(--coral);
+      color: white;
+    }
+
+
+    .cover--butter {
+      background: var(--butter);
+      color: var(--ink);
+    }
+
+
+    .cover--mint {
+      background: var(--mint);
+      color: var(--ink);
+    }
+
+
+    .cover__top {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 12px;
+
+      position: relative;
+
+      z-index: 2;
+    }
+
+
+    .cover__kicker {
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: .08em;
+
+      text-transform: uppercase;
+    }
+
+
+    .cover__art {
+      position: relative;
+
+      z-index: 2;
+
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 24px;
+      line-height: 1.15;
+
+      font-weight: 700;
+
+      letter-spacing: -.02em;
+
+      max-width: 82%;
+    }
+
+
+    .tag {
+      flex-shrink: 0;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      padding: 5px 11px;
+
+      border-radius: 999px;
+
+      border: 2px solid var(--ink);
+
+      background: white;
+      color: var(--ink);
+    }
+
+
+    .card-body {
+      padding: 18px 20px 21px;
+    }
+
+
+    .card-body h2 {
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 18px;
+      line-height: 1.28;
+
+      font-weight: 700;
+
+      letter-spacing: -.015em;
+
+      margin-bottom: 8px;
+    }
+
+
+    .card-body p {
+      font-size: 13.5px;
+      line-height: 1.55;
+
+      color: var(--ink-soft);
+
+      margin-bottom: 15px;
+    }
+
+
+    .featured-ribbon {
+      display: block;
+
+      padding: 8px 12px;
+
+      text-align: center;
+
+      background: var(--butter);
+
+      border-bottom: 2px solid var(--ink);
+
+      font-size: 10px;
+      font-weight: 800;
+
+      letter-spacing: .06em;
+
+      text-transform: uppercase;
+    }
+
+
+    .featured-intro {
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: var(--coral);
+
+      font-size: 10.5px;
+      font-weight: 800;
+
+      letter-spacing: .08em;
+
+      text-transform: uppercase;
+    }
+
+
+
+    /* BULLETS */
+
+
+    .bullets {
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 8px;
+
+      margin: 0 0 17px;
+    }
+
+
+    .bullets li {
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 8px;
+
+      font-size: 13.5px;
+      line-height: 1.42;
+    }
+
+
+    .bullets li::before {
+      content: '✓';
+
+      color: var(--coral);
+
+      font-weight: 800;
+
+      flex-shrink: 0;
+    }
+
+
+
+    /* BUTTONS */
+
+
+    .btn {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      width: 100%;
+
+      min-height: 48px;
+
+      padding: 13px 18px;
+
+      border: 2px solid var(--ink);
+      border-radius: 12px;
+
+      font-size: 14.5px;
+      line-height: 1.2;
+
+      font-weight: 800;
+
+      text-align: center;
+
+      background: var(--ink);
+      color: white;
+    }
+
+
+    .btn--coral {
+      background: var(--coral);
+    }
+
+
+    .btn--paper {
+      background: white;
+      color: var(--ink);
+    }
+
+
+    .btn-note {
+      display: block;
+
+      margin-top: 9px;
+
+      text-align: center;
+
+      font-size: 11.5px;
+
+      color: var(--ink-soft);
+
+      font-weight: 500;
+    }
+
+
+
+
+    /* =========================
+       PROOF
+    ========================== */
+
+
+    .mini-proof {
+      background: white;
+
+      border: 2px solid var(--ink);
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      padding: 14px 16px;
+
+      text-align: center;
+
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+
+    .mini-proof b {
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 16px;
+    }
+
+
+
+    /* REVIEWS */
+
+
+    .reviews {
+      display: flex;
+      flex-direction: column;
+
+      gap: 16px;
+    }
+
+
+    .reviews-head {
+      text-align: center;
+
+      font-size: 11.5px;
+      font-weight: 800;
+
+      letter-spacing: .06em;
+
+      text-transform: uppercase;
+
+      color: var(--ink-soft);
+    }
+
+
+    .review {
+      display: flex;
+
+      align-items: flex-end;
+
+      gap: 10px;
+    }
+
+
+    .pfp {
+      width: 38px;
+      height: 38px;
+
+      border-radius: 50%;
+
+      border: 2px solid var(--ink);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      flex-shrink: 0;
+    }
+
+
+    .bubble {
+      background: white;
+
+      border: 2px solid var(--ink);
+
+      border-radius: 18px 18px 18px 4px;
+
+      box-shadow: var(--shadow);
+
+      padding: 12px 16px 10px;
+    }
+
+
+    .meta {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      font-size: 12.5px;
+
+      margin-bottom: 4px;
+    }
+
+
+    .stars {
+      color: var(--coral);
+
+      font-size: 11px;
+
+      letter-spacing: 1px;
+    }
+
+
+    .bubble p {
+      font-size: 14px;
+      line-height: 1.5;
+
+      margin-bottom: 4px;
+    }
+
+
+    .where {
+      font-size: 11.5px;
+
+      color: var(--ink-soft);
+    }
+
+
+
+
+    /* =========================
+       SECTION CONNECTORS
+    ========================== */
+
+
+    .ladder {
+      display: flex;
+      justify-content: center;
+
+      margin: 0;
+    }
+
+
+    .ladder span {
+      font-size: 12px;
+      font-weight: 700;
+
+      color: var(--ink-soft);
+
+      background: var(--paper);
+
+      border: 2px dashed var(--ink);
+      border-radius: 999px;
+
+      padding: 6px 14px;
+
+      text-align: center;
+    }
+
+
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+
+    .contact {
+      background: white;
+
+      border: 2px solid var(--ink);
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      padding: 20px;
+    }
+
+
+    .contact h2 {
+      font-family: 'Space Grotesk', sans-serif;
+
+      font-size: 17px;
+
+      margin-bottom: 4px;
+    }
+
+
+    .contact p {
+      font-size: 14px;
+
+      color: var(--ink-soft);
+
+      margin-bottom: 14px;
+    }
+
+
+    .contact-row {
+      display: flex;
+
+      gap: 10px;
+    }
+
+
+    .contact-row .btn {
+      flex: 1;
+
+      text-decoration: none;
+    }
+
+
+    .copy-btn {
+      flex: 0 0 auto;
+
+      padding: 13px 16px;
+
+      border: 2px dashed var(--ink);
+      border-radius: 12px;
+
+      background: transparent;
+
+      font-size: 14px;
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+
+    footer {
+      text-align: center;
+
+      font-size: 12px;
+
+      color: var(--ink-soft);
+
+      padding-top: 4px;
+    }
+
+
+
+
+    /* =========================
+       STICKY CTA
+    ========================== */
+
+
+    .sticky {
+      position: fixed;
+
+      left: 50%;
+      bottom: 12px;
+
+      transform:
+        translateX(-50%)
+        translateY(140%);
+
+      width: calc(100% - 24px);
+      max-width: 428px;
+
+      z-index: 50;
+
+      transition:
+        transform .3s ease;
+    }
+
+
+    .sticky.show {
+      transform:
+        translateX(-50%)
+        translateY(0);
+    }
+
+
+    .sticky a {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 52px;
+
+      padding: 13px 14px;
+
+      background: var(--coral);
+      color: white;
+
+      border: 2px solid var(--ink);
+      border-radius: 14px;
+
+      box-shadow: var(--shadow);
+
+      text-decoration: none;
+
+      text-align: center;
+
+      font-size: 14px;
+      line-height: 1.2;
+
+      font-weight: 800;
+    }
+
+
+
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+
+    @media (min-width: 430px) {
+
+      .masterclass-layout {
+        grid-template-columns:
+          1.05fr .95fr;
+
+        gap: 18px;
+      }
+
+
+      .masterclass-title {
+        max-width: 280px;
+      }
+
+    }
+
+
+    @media (max-width: 380px) {
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+
+      .masterclass-title {
+        font-size: 24px;
+      }
+
+
+      .cover__art {
+        font-size: 22px;
+      }
+
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+
+<body>
+
+
+  <main class="page">
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+
+    <header class="hero">
+
+
+      <div class="avatar-wrap">
+
+        <!--
+          Upload your photo as profile.jpg
+          in the same folder as index.html
+        -->
+
+        <img
+          class="avatar"
+          src="profile.jpg"
+          alt="Kotryna Bass"
+          onerror="this.outerHTML='<div class=&quot;avatar-fallback&quot; aria-label=&quot;Kotryna Bass&quot;>KB</div>'"
+        >
+
+        <span
+          class="flag"
+          aria-hidden="true"
+        >
+          🇱🇹
         </span>
 
-        <span class="masterclass-title">
-          Curious about making money with AI? Come learn with me live.
-        </span>
-
-        <div class="masterclass-mini-proof">
-          <span>Free</span>
-          <span>Live on Monday</span>
-          <span>Beginner-friendly</span>
-        </div>
       </div>
 
-      <div class="masterclass-visual" aria-hidden="true">
 
-        <div class="masterclass-screen">
 
-          <span class="mc-label">
-            <span class="mc-dot"></span>
-            live training
-          </span>
+      <p class="eyebrow">
+        Digital products · AI · passive income
+      </p>
 
-          <div class="mc-window">
 
-            <div class="mc-window-head">
-              <span></span>
-              <span></span>
-              <span></span>
+
+      <h1>
+        Build digital products with AI —
+        and actually get them out into the world.
+      </h1>
+
+
+
+      <p class="role">
+        I’m Kotryna. I teach simple, practical ways
+        to turn ideas into digital products people can buy.
+      </p>
+
+
+
+      <p class="hook">
+
+        If you found me on Instagram and you’re wondering
+        where to start,
+
+        <b>
+          start with the free live masterclass this Monday.
+        </b>
+
+      </p>
+
+
+
+      <div class="hero-cta">
+
+
+        <a
+          class="hero-cta-primary"
+          href="https://kotrynabass.myflodesk.com/e8h6khtwj8"
+          target="_blank"
+          rel="noopener"
+        >
+
+          Save my free masterclass seat →
+
+        </a>
+
+
+
+        <span class="micro">
+
+          <b>Free + live</b>
+          · Monday, September 7
+
+        </span>
+
+
+
+        <a
+          class="hero-secondary"
+          href="https://pim.kotrynabass.com"
+          target="_blank"
+          rel="noopener"
+        >
+
+          Already ready to build?
+          Explore Passive Income Magic 4.0 →
+
+        </a>
+
+
+      </div>
+
+
+
+      <div class="hero-proof">
+
+        <span>
+          10,000+ products sold
+        </span>
+
+        <span>
+          Beginner-friendly
+        </span>
+
+        <span>
+          AI-powered
+        </span>
+
+      </div>
+
+
+    </header>
+
+
+
+
+
+    <!-- =========================
+         FREE MASTERCLASS
+    ========================== -->
+
+
+    <a
+      class="masterclass-card"
+      href="https://kotrynabass.myflodesk.com/e8h6khtwj8"
+      target="_blank"
+      rel="noopener"
+    >
+
+
+      <div class="masterclass-ribbon">
+
+        Free live masterclass · Monday, September 7
+
+      </div>
+
+
+
+      <div class="masterclass-top">
+
+
+        <div class="masterclass-layout">
+
+
+
+          <div>
+
+
+            <span class="masterclass-kicker">
+
+              Your easiest place to start
+
+            </span>
+
+
+
+            <span class="masterclass-title">
+
+              How I’d start making money
+              with digital products + AI
+              in 2026 — even from zero.
+
+            </span>
+
+
+
+            <div class="masterclass-mini-proof">
+
+              <span>
+                Free
+              </span>
+
+              <span>
+                Live Monday
+              </span>
+
+              <span>
+                Beginner-friendly
+              </span>
+
             </div>
 
-            <div class="mc-window-title">
-              AI + digital products masterclass
-            </div>
-
-            <div class="mc-window-sub">
-              A simple path to turning ideas into digital products people can buy.
-            </div>
-
-            <div class="mc-play">▶</div>
 
           </div>
+
+
+
+
+          <!-- VISUAL -->
+
+
+          <div
+            class="masterclass-visual"
+            aria-hidden="true"
+          >
+
+
+            <div class="masterclass-screen">
+
+
+              <span class="mc-label">
+
+                <span class="mc-dot"></span>
+
+                live training
+
+              </span>
+
+
+
+              <div class="mc-window">
+
+
+                <div class="mc-window-head">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+
+
+                <div class="mc-window-title">
+
+                  AI + digital products
+                  masterclass
+
+                </div>
+
+
+
+                <div class="mc-window-sub">
+
+                  A simple path to turning
+                  ideas into digital products
+                  people can actually buy.
+
+                </div>
+
+
+
+                <div class="mc-play">
+
+                  ▶
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+
+            <div class="mc-float mc-float--date">
+
+              <strong>
+                MON
+              </strong>
+
+              <span>
+                SEP 7
+              </span>
+
+            </div>
+
+
+
+            <div class="mc-float mc-float--free">
+
+              Free seat
+
+            </div>
+
+
+          </div>
+
+
         </div>
 
-        <div class="mc-float mc-float--date">
-          <strong>MON</strong>
-          <span>SEP 7</span>
-        </div>
-
-        <div class="mc-float mc-float--free">
-          Free seat
-        </div>
 
       </div>
+
+
+
+
+
+      <div class="masterclass-body">
+
+
+        <p>
+
+          Before you buy another course or disappear
+          into weeks of tutorials, come to this free session.
+
+          I’ll show you the practical digital-product path
+          I teach — and where AI can make the process
+          dramatically faster.
+
+        </p>
+
+
+
+        <ul class="bullets">
+
+
+          <li>
+
+            See the simple digital-product model
+            I’d use if I were starting today
+
+          </li>
+
+
+          <li>
+
+            Learn where AI can save you
+            the most time
+
+          </li>
+
+
+          <li>
+
+            Leave knowing what your next
+            step should actually be
+
+          </li>
+
+
+        </ul>
+
+
+
+        <span class="btn">
+
+          Reserve my free spot →
+
+        </span>
+
+
+
+        <span class="btn-note">
+
+          Free registration · live on Monday
+
+        </span>
+
+
+      </div>
+
+
+    </a>
+
+
+
+
+
+    <!-- =========================
+         PASSIVE INCOME MAGIC
+    ========================== -->
+
+
+    <a
+      class="card"
+      href="https://pim.kotrynabass.com"
+      target="_blank"
+      rel="noopener"
+    >
+
+
+      <span class="featured-ribbon">
+
+        Ready to build it?
+        This is the full step-by-step path.
+
+      </span>
+
+
+
+      <div class="cover cover--dark">
+
+
+        <div class="cover__top">
+
+
+          <span
+            class="cover__kicker"
+            style="color:var(--butter)"
+          >
+
+            21-day Claude program
+
+          </span>
+
+
+
+          <span class="tag">
+
+            €197
+
+          </span>
+
+
+        </div>
+
+
+
+        <span class="cover__art">
+
+          Passive Income Magic 4.0
+
+        </span>
+
+
+
+        <span
+          style="
+            position:relative;
+            z-index:2;
+            font-size:13px;
+            line-height:1.45;
+            color:rgba(255,255,255,.82);
+            font-weight:600;
+          "
+        >
+
+          AI Income Sprint ·
+          from idea to launched product with Claude.
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+      <div class="card-body">
+
+
+        <span class="featured-intro">
+
+          My signature program
+
+        </span>
+
+
+
+        <h2>
+
+          Go from “I have an idea”
+          to a digital product that is
+          live and ready to sell.
+
+        </h2>
+
+
+
+        <p>
+
+          Passive Income Magic 4.0 gives you the structure
+          the internet usually doesn’t:
+
+          one focused step at a time,
+          with Claude helping you research,
+          create, write, and launch faster.
+
+        </p>
+
+
+
+        <ul class="bullets">
+
+
+          <li>
+
+            Choose a sellable idea
+            and shape the offer
+
+          </li>
+
+
+          <li>
+
+            Create the product,
+            sales page, and launch content
+            with Claude
+
+          </li>
+
+
+          <li>
+
+            Follow the 21-day roadmap
+            all the way to launch
+
+          </li>
+
+
+        </ul>
+
+
+
+        <span class="btn btn--coral">
+
+          See Passive Income Magic 4.0 · €197 →
+
+        </span>
+
+
+
+        <span class="btn-note">
+
+          One-time payment · instant access
+
+        </span>
+
+
+      </div>
+
+
+    </a>
+
+
+
+
+
+    <!-- =========================
+         AUTHORITY
+    ========================== -->
+
+
+    <section class="mini-proof">
+
+      <b>
+        10,000+ digital products sold.
+      </b>
+
+      <br>
+
+      Built for beginners who want a clear path
+      from “I should do this”
+      to “it’s live and selling.”
+
+    </section>
+
+
+
+
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
+
+
+    <section class="reviews">
+
+
+      <p class="reviews-head">
+
+        The kind of feedback that
+        makes people finally launch
+
+      </p>
+
+
+
+
+      <div class="review">
+
+
+        <span
+          class="pfp"
+          style="background:var(--lilac)"
+        >
+
+          SK
+
+        </span>
+
+
+
+        <div class="bubble">
+
+
+          <div class="meta">
+
+            <b>
+              Sarah K.
+            </b>
+
+            <span class="stars">
+              ★★★★★
+            </span>
+
+          </div>
+
+
+
+          <p>
+
+            “After months of procrastinating,
+            I finally launched.
+
+            I made my first €1,000 on Etsy —
+            and now I know exactly
+            what to create next.”
+
+          </p>
+
+
+
+          <span class="where">
+
+            Student win
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="review">
+
+
+        <span
+          class="pfp"
+          style="background:var(--butter)"
+        >
+
+          IE
+
+        </span>
+
+
+
+        <div class="bubble">
+
+
+          <div class="meta">
+
+            <b>
+              Ieva
+            </b>
+
+            <span class="stars">
+              ★★★★★
+            </span>
+
+          </div>
+
+
+
+          <p>
+
+            “The AI mockups changed
+            how my listings look.
+
+            My shop finally feels professional,
+            and people actually click.”
+
+          </p>
+
+
+
+          <span class="where">
+
+            Student win
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="review">
+
+
+        <span
+          class="pfp"
+          style="background:var(--mint)"
+        >
+
+          JR
+
+        </span>
+
+
+
+        <div class="bubble">
+
+
+          <div class="meta">
+
+            <b>
+              Jade R.
+            </b>
+
+            <span class="stars">
+              ★★★★★
+            </span>
+
+          </div>
+
+
+
+          <p>
+
+            “This is the first time
+            I felt like someone gave me
+            a simple path instead of more overwhelm.
+
+            I actually finished the thing.”
+
+          </p>
+
+
+
+          <span class="where">
+
+            Student win
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- =========================
+         FREE GUIDE
+    ========================== -->
+
+
+    <a
+      class="card"
+      href="https://kotrynabass.myflodesk.com/aiguide"
+      target="_blank"
+      rel="noopener"
+    >
+
+
+      <div class="cover cover--mint">
+
+
+        <div class="cover__top">
+
+
+          <span class="cover__kicker">
+
+            Free guide
+
+          </span>
+
+
+
+          <span class="tag">
+
+            Free
+
+          </span>
+
+
+        </div>
+
+
+
+        <span class="cover__art">
+
+          100+ AI digital product ideas
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+      <div class="card-body">
+
+
+        <h2>
+
+          Want an easier first step?
+          Grab the free guide.
+
+        </h2>
+
+
+
+        <p>
+
+          Get 100+ AI digital product ideas
+          so you can stop wondering what to sell
+          and start spotting what fits you fastest.
+
+        </p>
+
+
+
+        <span class="btn">
+
+          Send me the free PDF →
+
+        </span>
+
+
+
+        <span class="btn-note">
+
+          Free download · perfect if you’re
+          not ready for the full sprint yet
+
+        </span>
+
+
+      </div>
+
+
+    </a>
+
+
+
+
+
+    <div class="ladder">
+
+      <span>
+
+        not ready for the full sprint?
+        start smaller ↓
+
+      </span>
+
     </div>
+
+
+
+
+
+    <!-- =========================
+         PROMPT PACK
+    ========================== -->
+
+
+    <a
+      class="card"
+      href="https://prompts.kotrynabass.com"
+      target="_blank"
+      rel="noopener"
+    >
+
+
+      <div class="cover cover--butter">
+
+
+        <div class="cover__top">
+
+
+          <span class="cover__kicker">
+
+            Starter offer · Claude prompts
+
+          </span>
+
+
+
+          <span class="tag">
+
+            €27
+
+          </span>
+
+
+        </div>
+
+
+
+        <span class="cover__art">
+
+          Your first digital product
+          in around 40 minutes
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+      <div class="card-body">
+
+
+        <h2>
+
+          Six copy-paste Claude prompts.
+          One product idea turned into a real offer.
+
+        </h2>
+
+
+
+        <p>
+
+          Perfect if you want a tiny first win
+          before committing to the full
+          21-day transformation.
+
+        </p>
+
+
+
+        <span class="btn">
+
+          Get the prompt pack — €27 →
+
+        </span>
+
+
+
+        <span class="btn-note">
+
+          One-time payment · instant download
+
+        </span>
+
+
+      </div>
+
+
+    </a>
+
+
+
+
+
+    <div class="ladder">
+
+      <span>
+
+        ready to build a bigger catalog? ↓
+
+      </span>
+
+    </div>
+
+
+
+
+
+    <!-- =========================
+         ETSY AI ACADEMY
+    ========================== -->
+
+
+    <a
+      class="card"
+      href="https://etsyai.kotrynabass.com"
+      target="_blank"
+      rel="noopener"
+    >
+
+
+      <div class="cover cover--coral">
+
+
+        <div class="cover__top">
+
+
+          <span class="cover__kicker">
+
+            Grow beyond one product
+
+          </span>
+
+
+
+          <span class="tag">
+
+            €97
+
+          </span>
+
+
+        </div>
+
+
+
+        <span class="cover__art">
+
+          Etsy AI Academy
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+      <div class="card-body">
+
+
+        <div
+          style="
+            font-size:12.5px;
+            color:var(--ink-soft);
+            font-weight:700;
+            margin-bottom:12px;
+          "
+        >
+
+          <span class="stars">
+            ★★★★★
+          </span>
+
+          4.9
+
+        </div>
+
+
+
+        <h2>
+
+          Turn one product into
+          a shop that sells again and again
+
+        </h2>
+
+
+
+        <p>
+
+          Once you’ve proven the first idea,
+          this is the next move:
+
+          a fuller system for building
+          an Etsy catalog with AI.
+
+        </p>
+
+
+
+        <ul class="bullets">
+
+
+          <li>
+
+            Find niches, products,
+            and keywords that get discovered
+
+          </li>
+
+
+          <li>
+
+            Create better listings,
+            mockups, and thumbnails with AI
+
+          </li>
+
+
+          <li>
+
+            Build repeatable product lines
+            instead of starting from scratch
+            each time
+
+          </li>
+
+
+        </ul>
+
+
+
+        <span class="btn btn--coral">
+
+          Get instant access — €97 →
+
+        </span>
+
+
+
+        <span class="btn-note">
+
+          One-time payment · instant access
+
+        </span>
+
+
+      </div>
+
+
+    </a>
+
+
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+
+    <section class="contact">
+
+
+      <h2>
+
+        Got a question?
+
+      </h2>
+
+
+
+      <p>
+
+        I read and reply to every email myself.
+
+      </p>
+
+
+
+      <div class="contact-row">
+
+
+        <a
+          class="btn btn--paper"
+          href="mailto:hello@kotrynabass.com"
+        >
+
+          Email me
+
+        </a>
+
+
+
+        <button
+          class="copy-btn"
+          id="copyBtn"
+          type="button"
+        >
+
+          Copy
+
+        </button>
+
+
+      </div>
+
+
+
+      <span class="btn-note">
+
+        hello@kotrynabass.com
+
+      </span>
+
+
+    </section>
+
+
+
+
+
+    <footer>
+
+      © 2026 Kotryna Bass · kotrynabass.com
+
+    </footer>
+
+
+  </main>
+
+
+
+
+
+  <!-- =========================
+       STICKY MASTERCLASS CTA
+  ========================== -->
+
+
+  <div
+    class="sticky"
+    id="stickyCta"
+  >
+
+
+    <a
+      href="https://kotrynabass.myflodesk.com/e8h6khtwj8"
+      target="_blank"
+      rel="noopener"
+    >
+
+      Free masterclass Monday · save my spot →
+
+    </a>
+
+
   </div>
 
-  <div class="masterclass-body">
 
-    <p>
-      Before you buy another course or disappear into weeks of tutorials,
-      come to this free session. I’ll show you the practical digital-product
-      path I teach — and how AI can make the process much lighter.
-    </p>
 
-    <ul class="bullets">
-      <li>See the simple digital-product model I teach</li>
-      <li>Understand where AI can save you the most time</li>
-      <li>Leave with a clearer next step for your own idea</li>
-    </ul>
 
-    <span class="btn">
-      Reserve my free spot <span class="arrow">→</span>
-    </span>
 
-    <span class="btn-note">
-      Free registration · live on Monday
-    </span>
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
-  </div>
-</a>
+
+  <script>
+
+
+    const sticky =
+      document.getElementById('stickyCta');
+
+
+    const hero =
+      document.querySelector('.hero');
+
+
+
+    if ('IntersectionObserver' in window) {
+
+
+      const observer =
+        new IntersectionObserver(
+
+          ([entry]) => {
+
+            sticky.classList.toggle(
+              'show',
+              !entry.isIntersecting
+            );
+
+          },
+
+          {
+            threshold: 0.15
+          }
+
+        );
+
+
+      observer.observe(hero);
+
+
+    } else {
+
+
+      sticky.classList.add('show');
+
+
+    }
+
+
+
+
+
+    const copyBtn =
+      document.getElementById('copyBtn');
+
+
+
+    copyBtn.addEventListener(
+
+      'click',
+
+      async () => {
+
+
+        const email =
+          'hello@kotrynabass.com';
+
+
+        try {
+
+
+          await navigator.clipboard.writeText(
+            email
+          );
+
+
+          copyBtn.textContent =
+            'Copied!';
+
+
+          setTimeout(
+
+            () => {
+
+              copyBtn.textContent =
+                'Copy';
+
+            },
+
+            1600
+
+          );
+
+
+        } catch (e) {
+
+
+          copyBtn.textContent =
+            email;
+
+
+        }
+
+
+      }
+
+    );
+
+
+  </script>
+
+
+</body>
+</html>
