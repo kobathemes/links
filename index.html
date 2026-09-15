@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Kotryna Bass — Digital Products, AI & Passive Income</title>
-  <meta name="description" content="Learn how to create and sell digital products with AI. Join Kotryna Bass's free live masterclass, explore Passive Income Magic 4.0, or start with a free guide." />
+  <meta name="description" content="Learn how to create and sell digital products with AI. Join Kotryna Bass's free live masterclass, explore PIM 4.0: AI Income Sprint, or start with the free masterclass." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -461,6 +461,83 @@
       color:var(--ink);
     }
 
+    /* PIM 4.0 wordmark lockup */
+    .pim-title{
+      position:relative;z-index:2;
+      font-family:'Space Grotesk',sans-serif;
+      font-size:46px;line-height:.95;font-weight:700;
+      letter-spacing:-.04em;color:#fff;
+      text-shadow:3px 3px 0 var(--coral);
+    }
+    .pim-ver{color:var(--butter)}
+    .pim-sub{
+      position:relative;z-index:2;
+      display:flex;align-items:center;gap:8px;
+      margin-top:-4px;
+      font-family:'Space Grotesk',sans-serif;
+      font-size:18px;font-weight:700;font-style:italic;
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--butter);
+    }
+
+    .pim-visual{
+      position:relative;z-index:2;
+      background:#fff;color:var(--ink);
+      border:2px solid var(--ink);border-radius:14px;
+      padding:12px;margin-top:4px;
+      box-shadow:3px 3px 0 rgba(255,255,255,.25);
+    }
+    .pim-visual-label{
+      display:flex;justify-content:space-between;align-items:center;
+      font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+      color:var(--ink-soft);margin-bottom:9px;
+    }
+    .pim-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+    .pim-day{
+      aspect-ratio:1;border:1.5px solid var(--ink);border-radius:6px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:9.5px;font-weight:800;background:var(--paper);
+    }
+    .pim-day--done{background:var(--mint)}
+    .pim-day--launch{background:var(--coral);color:#fff;font-size:12px}
+
+    .cover__art--big{font-size:34px;line-height:1.04;letter-spacing:-.03em;text-transform:uppercase;max-width:100%}
+    .cover__sub{position:relative;z-index:2;font-size:13.5px;line-height:1.45;font-weight:600;color:rgba(23,18,16,.75);max-width:320px}
+
+    /* masterclass promo player */
+    .mc-player{
+      position:relative;z-index:2;
+      background:var(--ink);color:#fff;
+      border:2px solid var(--ink);border-radius:14px;
+      padding:14px;
+      box-shadow:3px 3px 0 rgba(23,18,16,.28);
+    }
+    .mc-player-row{display:flex;align-items:center;gap:12px}
+    .mc-playbtn{
+      flex-shrink:0;width:46px;height:46px;border-radius:50%;
+      background:var(--coral);border:2px solid #fff;color:#fff;
+      display:flex;align-items:center;justify-content:center;
+      font-size:15px;padding-left:3px;
+      animation:pulsePlay 2.2s ease-out infinite;
+    }
+    .mc-player-label{
+      display:block;font-size:9.5px;font-weight:800;
+      letter-spacing:.08em;text-transform:uppercase;
+      color:var(--butter);margin-bottom:4px;
+    }
+    .mc-player-title{
+      display:block;font-family:'Space Grotesk',sans-serif;
+      font-size:14.5px;line-height:1.25;font-weight:700;
+    }
+    .mc-bar{margin-top:13px;height:8px;background:rgba(255,255,255,.18);border-radius:99px;overflow:hidden}
+    .mc-bar span{display:block;height:100%;width:4%;background:var(--coral);border-radius:99px;animation:fillbar 6s linear infinite}
+    @keyframes pulsePlay{
+      0%{box-shadow:0 0 0 0 rgba(255,90,60,.55)}
+      70%{box-shadow:0 0 0 14px rgba(255,90,60,0)}
+      100%{box-shadow:0 0 0 0 rgba(255,90,60,0)}
+    }
+    @keyframes fillbar{from{width:4%}to{width:78%}}
+
     .card-body{padding:18px 20px 21px}
     .card-body h2{font-family:'Space Grotesk',sans-serif;font-size:18px;line-height:1.28;font-weight:700;letter-spacing:-.015em;margin-bottom:8px}
     .card-body p{font-size:13.5px;line-height:1.55;color:var(--ink-soft);margin-bottom:15px}
@@ -623,7 +700,7 @@
     }
 
     @media(prefers-reduced-motion:reduce){
-      *{scroll-behavior:auto!important;transition:none!important}
+      *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
     }
   </style>
 </head>
@@ -638,116 +715,88 @@
         <span class="flag" aria-hidden="true">🇱🇹</span>
       </div>
 
-      <p class="eyebrow">Free live masterclass · Monday, September 7</p>
-      <h1>Make money with AI — even if you’re starting from zero.</h1>
-      <p class="role">I’ll show you how to turn simple ideas into digital products people can actually buy.</p>
-
-      <div class="hero-cta">
-        <a class="hero-cta-primary" href="https://kotrynabass.myflodesk.com/e8h6khtwj8" target="_blank" rel="noopener">
-          Save my free seat →
-        </a>
-        <span class="micro"><b>Free + live</b> · beginner-friendly · no tech skills needed</span>
-      </div>
-
-      <div class="hero-proof">
-        <span>10,000+ products sold</span>
-        <span>Digital products since 2012</span>
-      </div>
+      <h1>Kotryna Bass</h1>
+      <p class="role">Mom of two, making money from home. I’ve sold 10,000+ digital products — and I teach beginners to do the same with AI.</p>
     </header>
 
     <!-- FREE MASTERCLASS -->
-    <a class="masterclass-card" href="https://kotrynabass.myflodesk.com/e8h6khtwj8" target="_blank" rel="noopener">
-      <div class="masterclass-ribbon">Free masterclass · Monday, September 7</div>
+    <a class="card" href="https://kotrynabass.myflodesk.com/e8h6khtwj8" target="_blank" rel="noopener">
+      <div class="cover cover--butter">
+        <div class="cover__top">
+          <span class="cover__kicker">Start here · watch anytime</span>
+          <span class="tag">FREE</span>
+        </div>
+        <span class="cover__art cover__art--big">Free<br>Masterclass</span>
 
-      <div class="masterclass-top">
-        <div class="masterclass-layout">
-          <div>
-            <span class="masterclass-kicker">If I were starting again in 2026</span>
-            <span class="masterclass-title">This is how I’d start making money with AI.</span>
-
-            <div class="masterclass-mini-proof">
-              <span>Free</span>
-              <span>Live</span>
-              <span>Beginner-friendly</span>
+        <div class="mc-player" aria-hidden="true">
+          <div class="mc-player-row">
+            <span class="mc-playbtn">▶</span>
+            <div>
+              <span class="mc-player-label">● On-demand training</span>
+              <span class="mc-player-title">How I’d start making money with AI — from zero</span>
             </div>
           </div>
-
-          <div class="masterclass-visual" aria-hidden="true">
-            <div class="masterclass-screen">
-              <span class="mc-label"><span class="mc-dot"></span> live training</span>
-
-              <div class="mc-window">
-                <div class="mc-window-head"><span></span><span></span><span></span></div>
-                <div class="mc-window-title">Make money with AI</div>
-                <div class="mc-window-sub">Turn an idea into a digital product people can buy.</div>
-                <div class="mc-play">▶</div>
-              </div>
-            </div>
-
-            <div class="mc-float mc-float--date">
-              <strong>MON</strong>
-              <span>SEP 7</span>
-            </div>
-            <div class="mc-float mc-float--free">FREE</div>
-          </div>
+          <div class="mc-bar"><span></span></div>
         </div>
       </div>
 
-      <div class="masterclass-body compact">
+      <div class="card-body">
         <ul class="bullets">
           <li>Find a simple idea people will pay for</li>
           <li>Use AI to create it much faster</li>
           <li>Turn it into something you can sell online</li>
         </ul>
 
-        <span class="btn">Reserve my free spot →</span>
-        <span class="btn-note">Free registration · live Monday</span>
+        <span class="btn">Sign up free →</span>
+        <span class="btn-note">Instant access · beginner-friendly · the perfect place to start</span>
       </div>
     </a>
 
     <!-- PASSIVE INCOME MAGIC -->
     <a class="card" href="https://pim.kotrynabass.com" target="_blank" rel="noopener">
-      <span class="featured-ribbon">Want the full system now? Start here.</span>
+      <span class="featured-ribbon">Ready to go all-in? Your next step</span>
 
       <div class="cover cover--dark">
         <div class="cover__top">
-          <span class="cover__kicker" style="color:var(--butter)">21-day Claude program</span>
+          <span class="cover__kicker" style="color:var(--butter)">My signature 21-day Claude program</span>
           <span class="tag">€197</span>
         </div>
-        <span class="cover__art">Passive Income Magic 4.0</span>
-        <span style="position:relative;z-index:2;font-size:13px;line-height:1.45;color:rgba(255,255,255,.82);font-weight:600">AI Income Sprint · from idea to launched product with Claude.</span>
+        <span class="pim-title">PIM <span class="pim-ver">4.0</span></span>
+        <span class="pim-sub">⚡ AI Income Sprint</span>
+
+        <div class="pim-visual" aria-hidden="true">
+          <div class="pim-visual-label"><span>Your 21-day roadmap</span><span>🚀 launch day</span></div>
+          <div class="pim-grid"><span class="pim-day pim-day--done">✓</span><span class="pim-day pim-day--done">✓</span><span class="pim-day pim-day--done">✓</span><span class="pim-day pim-day--done">✓</span><span class="pim-day pim-day--done">✓</span><span class="pim-day">6</span><span class="pim-day">7</span><span class="pim-day">8</span><span class="pim-day">9</span><span class="pim-day">10</span><span class="pim-day">11</span><span class="pim-day">12</span><span class="pim-day">13</span><span class="pim-day">14</span><span class="pim-day">15</span><span class="pim-day">16</span><span class="pim-day">17</span><span class="pim-day">18</span><span class="pim-day">19</span><span class="pim-day">20</span><span class="pim-day pim-day--launch">🚀</span></div>
+        </div>
       </div>
 
       <div class="card-body">
-        <span class="featured-intro">My signature program</span>
-        <h2>Go from “I have an idea” to a digital product that is live and ready to sell.</h2>
-        <p>Passive Income Magic 4.0 gives you the structure the internet usually doesn’t: one focused step at a time, with Claude helping you research, create, write, and launch faster.</p>
+        <h2>Build your passive income stream from home — in 21 days.</h2>
 
         <ul class="bullets">
-          <li>Choose a sellable idea and shape the offer</li>
-          <li>Create the product, sales page, and launch content with Claude</li>
-          <li>Follow the 21-day roadmap all the way to launch</li>
+          <li>Pick a simple, sellable idea</li>
+          <li>Create it with Claude — in the pockets of time you actually have</li>
+          <li>Launch in 21 days, then let it sell while you're with the kids</li>
         </ul>
 
-        <span class="btn btn--coral">See Passive Income Magic 4.0 · €197 →</span>
+        <span class="btn btn--coral">Join PIM 4.0: AI Income Sprint — €197 →</span>
         <span class="btn-note">One-time payment · instant access</span>
       </div>
     </a>
 
     <section class="mini-proof">
-      <b>10,000+ digital products sold.</b><br>
-      Built for beginners who want a clear path from “I should do this” to “it’s live and selling.”
+      <b>10,000+ digital products sold.</b>
     </section>
 
     <!-- TESTIMONIALS -->
     <section class="reviews">
-      <p class="reviews-head">The kind of feedback that makes people finally launch</p>
+      <p class="reviews-head">Student wins</p>
 
       <div class="review">
         <span class="pfp" style="background:var(--lilac)">SK</span>
         <div class="bubble">
           <div class="meta"><b>Sarah K.</b> <span class="stars">★★★★★</span></div>
-          <p>“After months of procrastinating, I finally launched. I made my first €1,000 on Etsy — and now I know exactly what to create next.”</p>
+          <p>“After months of procrastinating, I finally launched. I made my first $1,000 on Etsy — and now I know exactly what to create next.”</p>
           <span class="where">Student win</span>
         </div>
       </div>
@@ -771,72 +820,6 @@
       </div>
     </section>
 
-    <!-- FREE GUIDE -->
-    <a class="card" href="https://kotrynabass.myflodesk.com/aiguide" target="_blank" rel="noopener">
-      <div class="cover cover--mint">
-        <div class="cover__top">
-          <span class="cover__kicker">Free guide</span>
-          <span class="tag">Free</span>
-        </div>
-        <span class="cover__art">100+ AI digital product ideas</span>
-      </div>
-
-      <div class="card-body">
-        <h2>Want an easier first step? Grab the free guide.</h2>
-        <p>Get 100+ AI digital product ideas so you can stop wondering what to sell and start spotting what fits you fastest.</p>
-        <span class="btn">Send me the free PDF →</span>
-        <span class="btn-note">Free download · perfect if you’re not ready for the full sprint yet</span>
-      </div>
-    </a>
-
-    <div class="ladder"><span>not ready for the full sprint? start smaller ↓</span></div>
-
-    <!-- PROMPT PACK -->
-    <a class="card" href="https://prompts.kotrynabass.com" target="_blank" rel="noopener">
-      <div class="cover cover--butter">
-        <div class="cover__top">
-          <span class="cover__kicker">Starter offer · Claude prompts</span>
-          <span class="tag">€27</span>
-        </div>
-        <span class="cover__art">Your first digital product in around 40 minutes</span>
-      </div>
-
-      <div class="card-body">
-        <h2>Six copy-paste Claude prompts. One product idea turned into a real offer.</h2>
-        <p>Perfect if you want a tiny first win before committing to the full 21-day transformation.</p>
-        <span class="btn">Get the prompt pack — €27 →</span>
-        <span class="btn-note">One-time payment · instant download</span>
-      </div>
-    </a>
-
-    <div class="ladder"><span>ready to build a bigger catalog? ↓</span></div>
-
-    <!-- ETSY AI ACADEMY -->
-    <a class="card" href="https://etsyai.kotrynabass.com" target="_blank" rel="noopener">
-      <div class="cover cover--coral">
-        <div class="cover__top">
-          <span class="cover__kicker">Grow beyond one product</span>
-          <span class="tag">€97</span>
-        </div>
-        <span class="cover__art">Etsy AI Academy</span>
-      </div>
-
-      <div class="card-body">
-        <div style="font-size:12.5px;color:var(--ink-soft);font-weight:700;margin-bottom:12px"><span class="stars">★★★★★</span> 4.9</div>
-        <h2>Turn one product into a shop that sells again and again</h2>
-        <p>Once you’ve proven the first idea, this is the next move: a fuller system for building an Etsy catalog with AI.</p>
-
-        <ul class="bullets">
-          <li>Find niches, products, and keywords that get discovered</li>
-          <li>Create better listings, mockups, and thumbnails with AI</li>
-          <li>Build repeatable product lines instead of starting from scratch each time</li>
-        </ul>
-
-        <span class="btn btn--coral">Get instant access — €97 →</span>
-        <span class="btn-note">One-time payment · instant access</span>
-      </div>
-    </a>
-
     <!-- CONTACT -->
     <section class="contact">
       <h2>Got a question?</h2>
@@ -856,7 +839,7 @@
   <!-- Sticky masterclass CTA -->
   <div class="sticky" id="stickyCta">
     <a href="https://kotrynabass.myflodesk.com/e8h6khtwj8" target="_blank" rel="noopener">
-      Free masterclass: Make money with AI →
+      ▶ Sign up free — AI masterclass →
     </a>
   </div>
 
